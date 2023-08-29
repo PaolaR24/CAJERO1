@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO</title>
+</head>
+<body>
+    <form action="">
+        <h1>Cajero Automatico</h1>
+        <label for="">Usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">Password</label>
+        <input type="password" name="c" id="">
+        <input type="button" value="Ingresar" onclick="Ingresar(this.form)">
+    </form>
+    <script src="js/Cuenta"></script>
+    <script src="main.js"></script>
+    <script>
+        function Ingresar(form){
+            if (form.u.value=="Paola") {
+                if (form.c.value=="2709") {
+                    location="Principal.html";
+                     } else {
+                    alert("Error password") 
+                } 
+            } else {
+                alert("Error de usuario")     
+            }               
+        }
+        </script>
+
+</body> 
+</html>
